@@ -1,5 +1,4 @@
 import { useState, useEffect, forwardRef } from "react";
-import Menu from "./Menu";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./Sidebar.css";
@@ -51,7 +50,7 @@ export const Navbar = forwardRef((props, ref) => {
           </li>
         </a>
       </ul>
-      <Menu
+      {/* <Menu
         pageWrapId={"page-wrap"}
         outerContainerId={"Navbar"}
         customBurgerIcon={<FontAwesomeIcon icon={faBars} width={24} />}
@@ -60,7 +59,7 @@ export const Navbar = forwardRef((props, ref) => {
         burgerButtonClassName={"hidden"}
         {...props}
         right
-      />
+      /> */}
     </div>
   );
 });
