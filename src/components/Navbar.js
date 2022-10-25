@@ -1,6 +1,4 @@
 import { useState, useEffect, forwardRef } from "react";
-import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./Sidebar.css";
 import Pdf from "../resume.pdf";
 
