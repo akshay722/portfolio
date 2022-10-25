@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./Sidebar.css";
 import Pdf from "../resume.pdf";
 
-const Navbar = forwardRef((props, ref) => {
+export const Navbar = forwardRef((props, ref) => {
   const [show, setShow] = useState(true);
 
   let { expRef, skillsRef } = props;
@@ -45,7 +45,7 @@ const Navbar = forwardRef((props, ref) => {
         <li className="cursor-pointer" onClick={() => handleClick(skillsRef)}>
           Skills
         </li>
-        <a href={Pdf} target="_blank">
+        <a href={Pdf}>
           <li className="border-2 border-sky-400 rounded-lg px-4 py-2 hover:bg-sky-900 transition-all cursor-pointer">
             Resume
           </li>
@@ -64,5 +64,3 @@ const Navbar = forwardRef((props, ref) => {
     </div>
   );
 });
-
-export default Navbar;

@@ -27,7 +27,7 @@ export const About = forwardRef((props, ref) => {
         </div>
         <img
           src={profilePic}
-          alt="profile picture"
+          alt="profile"
           className="w-1/3 max-w-sm md:min-w-[auto] min-w-[200px] m-auto rounded-[50%]"
         />
       </div>

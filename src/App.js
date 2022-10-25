@@ -7,7 +7,7 @@ import { About } from "./components/About";
 import { Experiences } from "./components/Experiences";
 import { Skills } from "./components/Skills";
 import { Footer } from "./components/Footer";
-import Navbar from "./components/Navbar";
+import { Navbar } from "./components/Navbar";
 
 function App() {
   const aboutRef = useRef(null);
