@@ -1,13 +1,16 @@
-import "./App.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
-import { faAnglesDown } from "@fortawesome/free-solid-svg-icons";
 import { useRef } from "react";
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAnglesDown } from "@fortawesome/free-solid-svg-icons";
+
 import { About } from "./components/About";
 import { Experiences } from "./components/Experiences";
 import { Skills } from "./components/Skills";
 import { Footer } from "./components/Footer";
 import { Navbar } from "./components/Navbar";
+import wavingHand from "./waving_hand.gif";
+
+import "./App.css";
 
 function App() {
   const aboutRef = useRef(null);
@@ -25,7 +28,10 @@ function App() {
         className="h-[100vh] bg-[url('./sky.jpg')] bg-cover flex flex-col items-center justify-center text-center"
         id="page-wrap"
       >
-        <span className="text-6xl mb-8 font-bold">Hi, I'm Akshay</span>
+        <span className="text-6xl mb-8 font-bold flex items-center">
+          Hi, Akshay here{" "}
+          <img className="h-12 w-12 ml-4" src={wavingHand} alt="Waving hand" />
+        </span>
         <span className="text-xl font-semibold">Frontend Developer</span>
         <FontAwesomeIcon
           icon={faAnglesDown}
@@ -35,8 +41,10 @@ function App() {
       </div>
       <About ref={aboutRef} />
       <Experiences ref={experiencesRef} />
-      <Skills ref={skillsRef} />
-      <Footer />
+      <div className="h-screen">
+        <Skills ref={skillsRef} />
+        <Footer />
+      </div>
     </div>
   );
 }
