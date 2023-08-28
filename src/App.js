@@ -32,7 +32,7 @@ function App() {
           Hi, Akshay here{" "}
           <img className="h-12 w-12 ml-4" src={wavingHand} alt="Waving hand" />
         </span>
-        <span className="text-xl font-semibold">Frontend Developer</span>
+        <span className="text-xl font-semibold">Software Engineer</span>
         <FontAwesomeIcon
           icon={faAnglesDown}
           className="absolute bottom-10 animate-bounce w-12 h-12 cursor-pointer"
