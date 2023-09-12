@@ -28,7 +28,7 @@ function App() {
         className="h-[100vh] flex flex-col items-center justify-center text-center px-9"
         id="page-wrap"
       >
-        <div className="bg-[url('./sky.jpeg')] bg-cover absolute opacity-75 z-0 h-full w-full" />
+        <div className="bg-[url('./sky.webp')] bg-cover absolute opacity-75 z-0 h-full w-full" />
         <span className="text-6xl mb-8 font-bold flex items-center z-10">
           Hi, Akshay here{" "}
           <img className="h-12 w-12 ml-4" src={wavingHand} alt="Waving hand" />
