@@ -25,23 +25,24 @@ function App() {
     <div className="bg-slate-800 text-white/80 font-mono">
       <Navbar ref={aboutRef} expRef={experiencesRef} skillsRef={skillsRef} />
       <div
-        className="h-[100vh] bg-[url('./sky.jpg')] bg-cover flex flex-col items-center justify-center text-center"
+        className="h-[100vh] flex flex-col items-center justify-center text-center px-9"
         id="page-wrap"
       >
-        <span className="text-6xl mb-8 font-bold flex items-center">
+        <div className="bg-[url('./sky.jpeg')] bg-cover absolute opacity-75 z-0 h-full w-full" />
+        <span className="text-6xl mb-8 font-bold flex items-center z-10">
           Hi, Akshay here{" "}
           <img className="h-12 w-12 ml-4" src={wavingHand} alt="Waving hand" />
         </span>
-        <span className="text-xl font-semibold">Software Engineer</span>
+        <span className="text-xl font-semibold z-10">Software Engineer</span>
         <FontAwesomeIcon
           icon={faAnglesDown}
-          className="absolute bottom-10 animate-bounce w-12 h-12 cursor-pointer"
+          className="absolute bottom-10 animate-bounce w-12 h-12 cursor-pointer z-10"
           onClick={handleClick}
         />
       </div>
       <About ref={aboutRef} />
       <Experiences ref={experiencesRef} />
-      <div className="h-screen">
+      <div className="h-fit">
         <Skills ref={skillsRef} />
         <Footer />
       </div>

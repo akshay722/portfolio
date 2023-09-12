@@ -6,7 +6,7 @@ import profilePic from "../akshay.jpg";
 
 export const About = forwardRef((props, ref) => {
   return (
-    <div className="sm:p-20 px-6 py-10 h-screen" ref={ref}>
+    <div className="sm:p-20 px-6 py-10 min-h-screen h-fit" ref={ref}>
       <span className="sm:text-6xl text-4xl flex flex-col items-center mb-8 uppercase font-light text-center">
         A little about me
         <div className="bg-sky-800 h-0.5 my-9 sm:w-1/5 w-1/3" />

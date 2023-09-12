@@ -9,7 +9,7 @@ import { skills, tools } from "../constansts";
 export const Skills = forwardRef((props, ref) => {
   return (
     <div
-      className="h-5/6 sm:p-20 px-6 py-10 relative z-[1] before:bg-[url('./work.jpg')] before:content-[''] before:absolute before:bg-cover before:top-0 before:bottom-0 before:right-0 before:left-0 before:z-[-1] before:opacity-30"
+      className=" min-h-[83.33%] h-fit sm:p-20 px-6 py-10 relative z-[1] before:bg-[url('./work.jpg')] before:content-[''] before:absolute before:bg-cover before:top-0 before:bottom-0 before:right-0 before:left-0 before:z-[-1] before:opacity-30"
       ref={ref}
     >
       <span className="sm:text-6xl text-4xl flex flex-col items-center mb-4 uppercase font-light">

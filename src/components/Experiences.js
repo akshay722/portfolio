@@ -8,7 +8,7 @@ export const Experiences = forwardRef((props, ref) => {
   }
 
   return (
-    <div className="h-screen bg-neutral-800 sm:px-20 px-6 py-10" ref={ref}>
+    <div className="h-fit min-h-screen bg-neutral-800 sm:px-20 px-6 py-10" ref={ref}>
       <span className="sm:text-6xl text-4xl flex flex-col items-center mb-4 uppercase font-light">
         Experience
         <div className="bg-sky-800 h-0.5 my-9 sm:w-[10%] w-[25%]" />

@@ -28,7 +28,7 @@ export const Navbar = forwardRef((props, ref) => {
 
   return (
     <div
-      className={`bg-transparent text-white/80 h-20 w-full sm:flex hidden items-center justify-end fixed transition-all ${
+      className={`bg-transparent text-white/80 h-20 w-full sm:flex hidden items-center justify-end fixed transition-all  z-10 ${
         !show ? "-translate-y-20" : ""
       }`}
     >
@@ -42,11 +42,12 @@ export const Navbar = forwardRef((props, ref) => {
         <li className="cursor-pointer" onClick={() => handleClick(skillsRef)}>
           Skills
         </li>
-        <a href={Pdf}>
-          <li className="border-2 border-sky-400 rounded-lg px-4 py-2 hover:bg-sky-900 transition-all cursor-pointer">
-            Resume
-          </li>
-        </a>
+        <li
+          className="border-2 border-sky-400 rounded-lg px-4 py-2 hover:bg-sky-900 transition-all cursor-pointer"
+          onClick={() => window.open(Pdf)}
+        >
+          Resume
+        </li>
       </ul>
       {/* <Menu
         pageWrapId={"page-wrap"}
