@@ -1,6 +1,6 @@
 import { useState, useEffect, forwardRef } from "react";
 import "./Sidebar.css";
-import Pdf from "../resume.pdf";
+import Pdf from "../resumeAkshayVarma.pdf";
 
 export const Navbar = forwardRef((props, ref) => {
   const [show, setShow] = useState(true);
