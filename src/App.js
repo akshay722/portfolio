@@ -8,6 +8,7 @@ import { Experiences } from "./components/Experiences";
 import { Skills } from "./components/Skills";
 import { Footer } from "./components/Footer";
 import { Navbar } from "./components/Navbar";
+import ParticlesBackground from "./components/Particles";
 import wavingHand from "./waving_hand.gif";
 
 import "./App.css";
@@ -25,12 +26,12 @@ function App() {
     <div className="bg-slate-800 text-white/80 font-mono">
       <Navbar ref={aboutRef} expRef={experiencesRef} skillsRef={skillsRef} />
       <div
-        className="h-[100vh] flex flex-col items-center justify-center text-center px-9"
+        className="h-[100vh] flex flex-col items-center justify-center text-center px-9 bg-banner-bg"
         id="page-wrap"
       >
-        <div className="bg-[url('./sky.webp')] bg-cover absolute opacity-75 z-0 h-full w-full" />
+        <ParticlesBackground />
         <span className="text-6xl mb-8 font-bold flex items-center z-10">
-          Hi, Akshay here{" "}
+          Hi, I am Akshay{" "}
           <img className="h-12 w-12 ml-4" src={wavingHand} alt="Waving hand" />
         </span>
         <span className="text-xl font-semibold z-10">Software Engineer</span>
@@ -42,7 +43,7 @@ function App() {
       </div>
       <About ref={aboutRef} />
       <Experiences ref={experiencesRef} />
-      <div className="h-fit">
+      <div className="h-fit bg-gray-800 relative">
         <Skills ref={skillsRef} />
         <Footer />
       </div>
