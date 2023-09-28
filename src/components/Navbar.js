@@ -1,6 +1,8 @@
 import { useState, useEffect, forwardRef } from "react";
-import "./Sidebar.css";
+
 import Pdf from "../resumeAkshayVarma.pdf";
+
+import "../styles/styles.css";
 
 export const Navbar = forwardRef((props, ref) => {
   const [show, setShow] = useState(true);
@@ -28,14 +30,11 @@ export const Navbar = forwardRef((props, ref) => {
 
   return (
     <div
-      className={`bg-transparent text-white/80 h-20 w-full sm:flex hidden items-center justify-end fixed transition-all  z-10 ${
+      className={`bg-transparent text-white/80 h-20 sm:flex w-full hidden items-center justify-center fixed transition-all  z-10 ${
         !show ? "-translate-y-20" : ""
       }`}
     >
-      <ul className="sm:flex gap-6 ml-auto px-10 items-center hidden">
-        <li className="cursor-pointer" onClick={() => handleClick(ref)}>
-          About
-        </li>
+      <ul className="sm:flex gap-6 items-center slideTopNavAnimation hidden px-28">
         <li className="cursor-pointer" onClick={() => handleClick(expRef)}>
           Experience
         </li>

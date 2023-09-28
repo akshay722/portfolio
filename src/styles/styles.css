@@ -1,0 +1,79 @@
+.bm-menu-wrap {
+  top: 0;
+  background-color: black;
+}
+
+.slideRightAnimation {
+  animation: slideRight 1s ease forwards;
+}
+
+.slideBottomAnimation {
+  animation: slideBottom 1s ease forwards;
+}
+
+.slideLeftAnimation {
+  animation: slideLeft 1s ease forwards;
+}
+
+.slideTopNavAnimation {
+  animation: slideTop 1s ease forwards;
+}
+
+.rotateAnimation {
+  animation: rotate 1s ease forwards;
+}
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes slideBottom {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes slideLeft {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes slideTop {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(45deg);
+    opacity: 0;
+  }
+  100% {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+}
