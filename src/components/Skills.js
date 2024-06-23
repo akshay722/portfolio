@@ -1,47 +1,98 @@
-import { forwardRef } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import React from "react";
 import {
-  faGears,
-  faScrewdriverWrench,
+  faReact,
+  faNodeJs,
+  faAws,
+  faDocker,
+  faPython,
+  faJava,
+} from "@fortawesome/free-brands-svg-icons";
+import {
+  faDatabase,
+  faCogs,
+  faCode,
+  faBrain,
 } from "@fortawesome/free-solid-svg-icons";
-import { skills, tools } from "../constansts";
+import SkillCategory from "./SkillCategory";
 
-export const Skills = forwardRef((props, ref) => {
+const skills = [
+  {
+    category: "Frontend",
+    icon: faCode,
+    skills: [
+      { name: "React.js", icon: faReact },
+      { name: "Next.js", icon: faReact },
+      { name: "HTML", icon: faCode },
+      { name: "CSS", icon: faCode },
+      { name: "JavaScript", icon: faCode },
+      { name: "TypeScript", icon: faCode },
+    ],
+  },
+  {
+    category: "Backend",
+    icon: faDatabase,
+    skills: [
+      { name: "Node.js", icon: faNodeJs },
+      { name: "Spring Boot", icon: faJava },
+      { name: "Express.js", icon: faNodeJs },
+      { name: "MongoDB", icon: faDatabase },
+      { name: "SQL", icon: faDatabase },
+      { name: "Python", icon: faPython },
+      { name: "Java", icon: faJava },
+    ],
+  },
+  {
+    category: "Machine Learning",
+    icon: faBrain,
+    skills: [
+      { name: "TensorFlow", icon: faBrain },
+      { name: "LangChain", icon: faBrain },
+      { name: "Scikit-Learn", icon: faBrain },
+      { name: "Pandas", icon: faBrain },
+      { name: "NumPy", icon: faBrain },
+    ],
+  },
+  {
+    category: "DevOps",
+    icon: faCogs,
+    skills: [
+      { name: "Docker", icon: faDocker },
+      { name: "Kubernetes", icon: faDocker },
+      { name: "AWS", icon: faAws },
+      { name: "CI/CD", icon: faCogs },
+      { name: "Jenkins", icon: faCogs },
+    ],
+  },
+  {
+    category: "Others",
+    icon: faCogs,
+    skills: [
+      { name: "Git", icon: faCogs },
+      { name: "Agile Methodology", icon: faCogs },
+      { name: "Problem Solving", icon: faCogs },
+      { name: "Team Collaboration", icon: faCogs },
+      { name: "Storybook", icon: faCogs },
+      { name: "Postman", icon: faCogs },
+    ],
+  },
+];
+
+const Skills = () => {
   return (
-    <div
-      className=" min-h-[83.33%] h-fit sm:p-20 px-6 py-10 relative z-[1] before:bg-[url('./work.jpg')] relative before:content-[''] before:absolute before:bg-cover before:top-0 before:bottom-0 before:right-0 before:left-0 before:z-[-1] before:opacity-30"
-      ref={ref}
-    >
-      <span className="sm:text-6xl text-4xl flex flex-col items-center mb-4 uppercase font-light">
-        Skills
-        <div className="bg-sky-800 h-0.5 my-9 sm:w-[5%] w-[20%]" />
-      </span>
-      <div className="flex flex-wrap justify-center justify-evenly">
-        <div className="w-[370px]">
-          <div className="flex sm:justify-start	justify-center gap-2 my-4">
-            <FontAwesomeIcon icon={faGears} className="h-9" />
-            <h2 className="text-2xl font-bold">Development</h2>
-          </div>
-          <ul className="flex flex-wrap justify-center gap-4 mt-6 mb-4">
-            {skills.map((item, index) => (
-              <li className="sm:w-28 w-24 sm:h-28 h-24 rounded-[50%] border-2 border-sky flex justify-center items-center">
-                {item}
-              </li>
-            ))}
-          </ul>
-        </div>
-        <div className="">
-          <div className="flex gap-2 my-4">
-            <FontAwesomeIcon icon={faScrewdriverWrench} className="h-9" />
-            <h2 className="text-2xl mb-4 font-bold">Tools</h2>
-          </div>
-          <ul className="grid gap-5 mb-4">
-            {tools.map((item, index) => (
-              <li className="before:content-['✓'] before:mr-2">{item}</li>
-            ))}
-          </ul>
-        </div>
+    <div className="skills-container">
+      <h2 className="skills-title">My Skills</h2>
+      <div className="skills-grid">
+        {skills.map((skillCategory, index) => (
+          <SkillCategory
+            key={index}
+            category={skillCategory.category}
+            icon={skillCategory.icon}
+            skills={skillCategory.skills}
+          />
+        ))}
       </div>
     </div>
   );
-});
+};
+
+export default Skills;

@@ -1,78 +1,86 @@
-import { forwardRef } from "react";
-import { Tab } from "@headlessui/react";
-import { experiences } from "../constansts";
+import React from "react";
+import {
+  VerticalTimeline,
+  VerticalTimelineElement,
+} from "react-vertical-timeline-component";
+import "react-vertical-timeline-component/style.min.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faBriefcase,
+  faLaptopCode,
+  faGraduationCap,
+} from "@fortawesome/free-solid-svg-icons";
 
-export const Experiences = forwardRef((props, ref) => {
-  function classNames(...classes) {
-    return classes.filter(Boolean).join(" ");
-  }
+import "../styles/experiences.css";
 
+const experiences = [
+  {
+    title: "Software Engineer",
+    company: "FourKites",
+    description:
+      "As part of the Core Tracking and the Dynamic Yard teams, I contributed daily to modernizing the legacy application using React and Typescript and solving complex problems to improve backend performance",
+    date: "June 2022 - August 2023",
+    icon: faLaptopCode,
+    background: "rgb(33, 150, 243)",
+    color: "#fff",
+  },
+  {
+    title: "Software Engineer",
+    company: "Relative Finance",
+    description:
+      "As a Software Engineer and Founding Member at Relative Finance, I played a crucial role in optimizing and scaling the application to enhance performance and handle increased user load.",
+    date: "November 2021 - June 2022",
+    icon: faBriefcase,
+    background: "rgb(33, 150, 243)",
+    color: "#fff",
+  },
+  {
+    title: "Software Engineer",
+    company: "iSpace",
+    description:
+      "In this role, I worked closely with senior developers to create robust backend services and implemented key functionalities that enhanced user interaction.",
+    date: "September 2020 - October 2020",
+    icon: faGraduationCap,
+    background: "rgb(33, 150, 243)",
+    color: "#fff",
+  },
+];
+
+const Experiences = () => {
   return (
-    <div
-      className="h-fit min-h-screen bg-neutral-800 sm:px-20 px-6 py-10 relative"
-      ref={ref}
-    >
-      <span className="sm:text-6xl text-4xl flex flex-col items-center mb-4 uppercase font-light">
-        Experience
-        <div className="bg-sky-800 h-0.5 my-9 sm:w-[10%] w-[25%]" />
-      </span>
-      <div className="w-full py-4 sm:px-0">
-        <Tab.Group vertical={true}>
-          <Tab.List className="flex flex-wrap sm:flex-nowrap space-x-1 rounded-xl bg-blue-900/20 p-1">
-            {Object.keys(experiences).map((title) => (
-              <Tab
-                key={title}
-                className={({ selected }) =>
-                  classNames(
-                    "w-full rounded-lg py-2.5 text-sm font-medium leading-5 text-blue-700",
-                    "ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2",
-                    selected
-                      ? "bg-white shadow"
-                      : "text-blue-100 hover:bg-white/[0.12] hover:text-white"
-                  )
-                }
-              >
-                {title}
-              </Tab>
-            ))}
-          </Tab.List>
-          <Tab.Panels className="mt-2">
-            {Object.values(experiences).map((jobs, idx) => (
-              <Tab.Panel
-                key={idx}
-                className={classNames(
-                  "rounded-xl bg-transparent sm:p-3 text-white hover:bg-transparent",
-                  "focus:outline-none cursor-default"
-                )}
-              >
-                <ul className="sm:px-4">
-                  {jobs.map((job) => (
-                    <li
-                      key={job.id}
-                      className="relative rounded-md sm:p-3 pt-3"
-                    >
-                      <h className="text-2xl">{job.position}</h>
-                      <div className="bg-sky-800 h-0.5 my-4 w-1/4" />
-                      <div className="mb-10 sm:text-lg">
-                        {job.work.map((item, index) => (
-                          <li className="mb-10">{item}</li>
-                        ))}
-                      </div>
-                      <ul className="mt-1 flex gap-2 space-x-1 text-xs font-normal leading-4 text-white-500 flex-wrap">
-                        {job.tags.map((item, index) => (
-                          <li className="border border-sky-800 px-1.5 py-0.5 rounded-lg">
-                            {item}
-                          </li>
-                        ))}
-                      </ul>
-                    </li>
-                  ))}
-                </ul>
-              </Tab.Panel>
-            ))}
-          </Tab.Panels>
-        </Tab.Group>
-      </div>
+    <div className="experiences-container">
+      <h2 className="experiences-title text-center">My Experiences</h2>
+      <VerticalTimeline>
+        {experiences.map((experience, index) => (
+          <VerticalTimelineElement
+            key={index}
+            className="vertical-timeline-element--work"
+            contentStyle={{
+              background: experience.background,
+              color: experience.color,
+            }}
+            contentArrowStyle={{
+              borderRight: `7px solid ${experience.background}`,
+            }}
+            date={experience.date}
+            iconStyle={{
+              background: experience.background,
+              color: experience.color,
+            }}
+            icon={<FontAwesomeIcon icon={experience.icon} />}
+          >
+            <h3 className="vertical-timeline-element-title">
+              {experience.title}
+            </h3>
+            <h4 className="vertical-timeline-element-subtitle">
+              {experience.company}
+            </h4>
+            <p>{experience.description}</p>
+          </VerticalTimelineElement>
+        ))}
+      </VerticalTimeline>
     </div>
   );
-});
+};
+
+export default Experiences;

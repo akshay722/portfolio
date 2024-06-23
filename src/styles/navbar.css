@@ -1,0 +1,100 @@
+/* navbar.css */
+
+/* Navbar container */
+.navbar {
+  background-color: #1f1f1f;
+  color: white;
+  height: 5rem;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: right;
+  position: fixed;
+  z-index: 1000;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  padding-right: 10rem;
+}
+
+/* Navbar visibility states */
+.navbar-visible {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.navbar-hidden {
+  transform: translateY(-5rem);
+  opacity: 0;
+}
+
+/* Navbar list */
+.navbar-list {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+/* Initial load animation */
+.initial-load .navbar-item,
+.initial-load .navbar-resume {
+  opacity: 0;
+  animation: slideInFromTop 0.5s ease-out forwards;
+}
+
+.initial-load .navbar-item:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.initial-load .navbar-item:nth-child(2) {
+  animation-delay: 0.1s;
+}
+
+.initial-load .navbar-item:nth-child(3) {
+  animation-delay: 0.2s;
+}
+
+.initial-load .navbar-item:nth-child(4) {
+  animation-delay: 0.3s;
+}
+
+.initial-load .navbar-item:nth-child(5) {
+  animation-delay: 0.4s;
+}
+
+.initial-load .navbar-resume {
+  animation-delay: 0.5s;
+}
+
+/* Navbar items */
+.navbar-item,
+.navbar-resume {
+  cursor: pointer;
+  transition: color 0.3s, background-color 0.3s, border-color 0.3s;
+  opacity: 1; /* Ensure items remain visible after animation */
+}
+
+.navbar-item:hover {
+  color: #00bfff;
+}
+
+.navbar-resume {
+  border: 2px solid #00bfff;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+}
+
+.navbar-resume:hover {
+  background-color: #00bfff;
+  color: #1f1f1f;
+}
+
+/* Animations */
+@keyframes slideInFromTop {
+  from {
+    transform: translateY(-2rem);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
