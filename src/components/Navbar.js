@@ -1,4 +1,4 @@
-import { useState, useEffect, forwardRef } from "react";
+import { useState, useEffect, useCallback, forwardRef } from "react";
 import Pdf from "../assets/docs/resumeAkshayVarma.pdf";
 import "../styles/navbar.css";
 
@@ -8,26 +8,24 @@ const Navbar = forwardRef(
     const [initialLoad, setInitialLoad] = useState(true);
     const [lastScrollY, setLastScrollY] = useState(0);
 
-    const controlNavbarVisibility = () => {
+    const controlNavbarVisibility = useCallback(() => {
       if (window.scrollY > lastScrollY) {
-        // Scrolling down
         setIsVisible(false);
       } else {
-        // Scrolling up
         setIsVisible(true);
       }
       setLastScrollY(window.scrollY);
-    };
+    }, [lastScrollY]);
 
     useEffect(() => {
       window.addEventListener("scroll", controlNavbarVisibility);
       return () => {
         window.removeEventListener("scroll", controlNavbarVisibility);
       };
-    }, [lastScrollY]);
+    }, [controlNavbarVisibility]);
 
     useEffect(() => {
-      setTimeout(() => setInitialLoad(false), 1000); // Adjust the timeout as needed
+      setTimeout(() => setInitialLoad(false), 1000);
     }, []);
 
     const handleNavigationClick = (ref) => {
