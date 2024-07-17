@@ -16,13 +16,13 @@ const App = () => {
   const experiencesRef = useRef(null);
   const skillsRef = useRef(null);
   const projectsRef = useRef(null);
-  const contactRef = useRef(null); // Add ref for contact
+  const contactRef = useRef(null);
   const [loading, setLoading] = useState(true);
   const [initialLoad, setInitialLoad] = useState(true);
 
   useEffect(() => {
     const timer = setTimeout(() => setLoading(false), 2000);
-    const initialLoadTimer = setTimeout(() => setInitialLoad(false), 4300); // Adjust the timeout as needed
+    const initialLoadTimer = setTimeout(() => setInitialLoad(false), 4300);
     return () => {
       clearTimeout(timer);
       clearTimeout(initialLoadTimer);

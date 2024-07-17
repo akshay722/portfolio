@@ -18,7 +18,7 @@ const experiences = [
     title: "Software Engineer",
     company: "FourKites",
     description:
-      "As part of the Core Tracking and the Dynamic Yard teams, I contributed daily to modernizing the legacy application using React and Typescript and solving complex problems to improve backend performance",
+      "As part of the Core Tracking Redesign and the Dynamic Yard teams, I contributed daily to modernizing the legacy applications using React and Typescript and solving complex problems to improve performance",
     date: "June 2022 - August 2023",
     icon: faLaptopCode,
     background: "rgb(33, 150, 243)",
@@ -38,7 +38,7 @@ const experiences = [
     title: "Software Engineer",
     company: "iSpace",
     description:
-      "In this role, I worked closely with senior developers to create robust backend services and implemented key functionalities that enhanced user interaction.",
+      "In this role, I worked closely with senior developers to create robust services and implemented key features and web pages that enhanced user interaction.",
     date: "September 2020 - October 2020",
     icon: faGraduationCap,
     background: "rgb(33, 150, 243)",
