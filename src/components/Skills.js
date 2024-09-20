@@ -33,7 +33,6 @@ const skills = [
     icon: faDatabase,
     skills: [
       { name: "Node.js", icon: faNodeJs },
-      { name: "Spring Boot", icon: faJava },
       { name: "Express.js", icon: faNodeJs },
       { name: "MongoDB", icon: faDatabase },
       { name: "SQL", icon: faDatabase },
