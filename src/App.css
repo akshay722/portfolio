@@ -63,9 +63,9 @@ a:hover {
   bottom: -10px;
   border: 5px solid rgba(0, 191, 255, 0.6);
   border-radius: 50%;
-  opacity: 0; /* Hide initially */
+  opacity: 0;
   animation: fadeInBorder 0.5s ease-out forwards 2.2s,
-    borderGlow 0.5s infinite alternate 2.2s; /* Ensure the border appears and then starts glowing smoothly */
+    borderGlow 0.5s infinite alternate 2.2s;
 }
 
 @keyframes borderGlow {
@@ -85,23 +85,23 @@ a:hover {
   animation: slideInFromBottom 0.5s ease-out forwards;
 }
 
-.initial-load .text-content:nth-child(1) {
+.main-container .text-content:nth-child(1) {
   animation-delay: 1s;
 }
 
-.initial-load .text-content:nth-child(2) {
+.main-container .text-content:nth-child(2) {
   animation-delay: 1.2s;
 }
 
-.initial-load .text-content:nth-child(3) {
+.main-container .text-content:nth-child(3) {
   animation-delay: 1.4s;
 }
 
-.initial-load .text-content:nth-child(4) {
+.main-container .text-content:nth-child(4) {
   animation-delay: 1.6s;
 }
 
-.initial-load .text-content:nth-child(5) {
+.main-container .text-content:nth-child(5) {
   animation-delay: 1.8s;
 }
 
@@ -130,13 +130,16 @@ a:hover {
 
 @keyframes rotateProfile {
   from {
-    transform: rotate(90deg);
+    transform: rotate(-90deg);
+    opacity: 0;
   }
   to {
-    transform: rotate(360deg);
+    transform: rotate(0deg);
+    opacity: 1;
   }
 }
-.initial-load .profile-pic {
+
+.main-container .profile-pic {
   opacity: 0;
   animation: rotateProfile 1s ease-out 2.1s forwards;
 }

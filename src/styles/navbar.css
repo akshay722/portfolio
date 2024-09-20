@@ -1,6 +1,5 @@
 /* navbar.css */
 
-/* Navbar container */
 .navbar {
   background-color: #1f1f1f;
   color: white;
@@ -15,7 +14,6 @@
   padding-right: 10rem;
 }
 
-/* Navbar visibility states */
 .navbar-visible {
   transform: translateY(0);
   opacity: 1;
@@ -26,7 +24,6 @@
   opacity: 0;
 }
 
-/* Navbar list */
 .navbar-list {
   display: flex;
   gap: 1.5rem;

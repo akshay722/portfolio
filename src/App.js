@@ -18,14 +18,11 @@ const App = () => {
   const projectsRef = useRef(null);
   const contactRef = useRef(null);
   const [loading, setLoading] = useState(true);
-  const [initialLoad, setInitialLoad] = useState(true);
 
   useEffect(() => {
     const timer = setTimeout(() => setLoading(false), 2000);
-    const initialLoadTimer = setTimeout(() => setInitialLoad(false), 4300);
     return () => {
       clearTimeout(timer);
-      clearTimeout(initialLoadTimer);
     };
   }, []);
 
@@ -34,11 +31,7 @@ const App = () => {
   }
 
   return (
-    <div
-      className={`bg-[#1F1F1F] text-white/80 font-sans ${
-        initialLoad ? "initial-load" : ""
-      }`}
-    >
+    <div className={`bg-[#1F1F1F] text-white/80 font-sans main-container`}>
       <Navbar
         aboutRef={aboutRef}
         expRef={experiencesRef}

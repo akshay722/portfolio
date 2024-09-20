@@ -5,6 +5,13 @@ import ProjectItem from "./ProjectItem";
 
 const projects = [
   {
+    title: "Special Education AI Assistant",
+    description:
+      "An AI-powered assistant that centralizes SPED resources and help parents interpret their child's IEPs.",
+    image: "/images/sped.png",
+    link: "https://github.com/akshay722/SPED-AI-Assistant",
+  },
+  {
     title: "Tech Insights",
     description:
       "A multi agent llm app that finds YouTube interviews and blog posts for chosen technologies and business areas.",
@@ -37,12 +44,6 @@ const projects = [
     description: "A website for shopping indian cloths",
     image: "images/ecommerce.png",
     link: "https://github.com/akshay722/E-Commerce-App",
-  },
-  {
-    title: "Formalize Text",
-    description: "A tool to make the given text formal",
-    image: "images/Formalize.png",
-    link: "https://github.com/akshay722/Formalize-Text",
   },
 ];
 

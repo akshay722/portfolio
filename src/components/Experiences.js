@@ -39,7 +39,7 @@ const experiences = [
     company: "iSpace",
     description:
       "In this role, I worked closely with senior developers to create robust services and implemented key features and web pages that enhanced user interaction.",
-    date: "September 2020 - October 2020",
+    date: "January 2021 - November 2021",
     icon: faGraduationCap,
     background: "rgb(33, 150, 243)",
     color: "#fff",
