@@ -11,7 +11,7 @@ const AboutMe = React.forwardRef((props, ref) => {
   return (
     <>
       <section className="flex flex-col px-9 max-w-2xl" ref={ref}>
-        <h3 className="text-xl mb-4 text-cyan-400 text-content">{bio.intro}</h3>
+        <h3 className="text-xl mb-4 text-sky-300 text-content">{bio.intro}</h3>
         <h1 className="text-6xl mb-8 font-bold text-sky-200 text-content">
           {bio.name}
         </h1>

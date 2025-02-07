@@ -16,11 +16,12 @@ const ContactMe = () => {
       <p className="contact-me-section-number">What's Next?</p>
       <h2 className="contact-me-title">Get In Touch</h2>
       <p className="contact-me-description">
-        I will be graduating with a Master's in Information Technology from UTD
-        in December 2024 and am looking for a full-time role from then. I am
-        also seeking co-op opportunities for Fall 2024. If you have any openings
-        or would like to connect, please feel free to reach out. I look forward
-        to hearing from you!
+        I recently graduated with a Master's in Information Technology from UTD
+        in December 2024 and am actively seeking a full-time software
+        engineering role. I'm eager to apply my skills in building scalable,
+        customer-focused solutions and collaborate with innovative teams. If you
+        have any opportunities or would like to connect, feel free to reach out.
+        I look forward to the next exciting chapter in my career!
       </p>
       <a href="mailto:akshaypenmatsa@gmail.com" className="contact-me-button">
         Say Hello

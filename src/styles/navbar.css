@@ -74,13 +74,13 @@
 }
 
 .navbar-resume {
-  border: 2px solid #00bfff;
+  border: 2px solid #31a8d0;
   border-radius: 0.5rem;
   padding: 0.5rem 1rem;
 }
 
 .navbar-resume:hover {
-  background-color: #00bfff;
+  background-color: #31a8d0;
   color: #1f1f1f;
 }
 

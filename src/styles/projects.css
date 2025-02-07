@@ -5,42 +5,19 @@
   text-align: center;
 }
 
-.projects-title {
-  font-size: 2.5em;
-  color: #00bfff;
-  margin-bottom: 40px;
-}
-
 .projects-grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
+  gap: 50px;
 }
 
-.project-item {
-  background: #333;
-  border-radius: 8px;
-  overflow: hidden;
-  width: calc(27% - 20px);
-  margin: 10px;
-  text-align: left;
-  padding: 20px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
-  position: relative;
-  opacity: 0;
-  transform: translateY(50px);
-  display: flex;
-  flex-direction: column; /* Make sure elements stack vertically */
-  justify-content: space-between; /* Ensure the link stays at the bottom */
-}
-
-.project-item.visible {
+.parallax-effect.visible {
   opacity: 1;
   transform: translateY(0);
 }
 
-.project-item:hover {
+.parallax-effect:hover {
   transform: translateY(-10px);
   box-shadow: 0 10px 20px rgba(0, 191, 255, 0.6);
 }
@@ -54,8 +31,12 @@
 
 .project-title {
   font-size: 1.5em;
-  color: #00bfff;
+  color: #d6f4fe;
   margin: 10px 0;
+}
+
+.project-title:hover {
+  color: #00befe;
 }
 
 .project-description {
@@ -65,16 +46,22 @@
   flex-grow: 1;
 }
 
+.projects-title {
+  font-size: 2.5em;
+  color: #00bfff;
+  margin-bottom: 40px;
+}
+
 .project-link {
   font-size: 1em;
-  color: #00bfff;
+  color: #cef3ff;
   text-decoration: none;
   transition: color 0.3s ease;
   align-self: flex-start;
 }
 
 .project-link:hover {
-  color: #ff69b4;
+  color: #1f638e;
 }
 
 @media (max-width: 1024px) {
@@ -88,5 +75,31 @@
     width: 100%;
     margin-left: 0;
     margin-right: 0;
+  }
+}
+
+.parallax-effect {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: calc(27% - 70px);
+  min-width: 300px;
+  /* height: 300px; */
+  background: #333;
+  color: white;
+  /* border: 1px solid black; */
+  border-radius: 20px;
+  padding: 20px;
+
+  transform-style: preserve-3d;
+
+  .inner-element {
+    transform: translateZ(60px);
+    padding: 20px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
   }
 }

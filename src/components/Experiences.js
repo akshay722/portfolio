@@ -15,23 +15,23 @@ import "../styles/experiences.css";
 
 const experiences = [
   {
-    title: "Software Engineer",
-    company: "FourKites",
+    title: "Software Engineer Intern",
+    company: "Insight Global",
     description:
-      "As part of the Core Tracking Redesign and the Dynamic Yard teams, I contributed daily to modernizing the legacy applications using React and Typescript and solving complex problems to improve performance",
-    date: "June 2022 - August 2023",
-    icon: faLaptopCode,
-    background: "rgb(33, 150, 243)",
+      "Contributed to the development of an enterprise-level cloud deployment automation platform, designing a user-centric frontend that simplified the configuration and deployment of AWS infrastructure. Focused on delivering an intuitive interface while integrating backend automation for seamless deployments",
+    date: "August 2024 - December 2024",
+    icon: faBriefcase,
+    background: "rgb(55, 133, 196)",
     color: "#fff",
   },
   {
     title: "Software Engineer",
-    company: "Relative Finance",
+    company: "FourKites",
     description:
-      "As a Software Engineer and Founding Member at Relative Finance, I played a crucial role in optimizing and scaling the application to enhance performance and handle increased user load.",
-    date: "November 2021 - June 2022",
-    icon: faBriefcase,
-    background: "rgb(33, 150, 243)",
+      "As part of the Core Tracking Redesign and Dynamic Yard teams, I contributed daily to modernizing legacy applications using React and TypeScript. Focused on solving complex problems to improve performance while prioritizing customer needs, enhancing user experience, and delivering seamless, efficient solutions",
+    date: "November 2021 - August 2023",
+    icon: faLaptopCode,
+    background: "rgb(55, 133, 196)",
     color: "#fff",
   },
   {
@@ -41,7 +41,7 @@ const experiences = [
       "In this role, I worked closely with senior developers to create robust services and implemented key features and web pages that enhanced user interaction.",
     date: "January 2021 - November 2021",
     icon: faGraduationCap,
-    background: "rgb(33, 150, 243)",
+    background: "rgb(55, 133, 196)",
     color: "#fff",
   },
 ];

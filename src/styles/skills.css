@@ -38,7 +38,7 @@
 
 .skill-category-title {
   font-size: 1.8em;
-  color: #00bfff;
+  color: #00a9e1;
   margin-bottom: 15px;
   display: flex;
   align-items: center;
@@ -72,7 +72,7 @@
 }
 
 .skill-item:hover {
-  background: #00bfff;
+  background: #2cb1dd;
   color: #1f1f1f;
 }
 

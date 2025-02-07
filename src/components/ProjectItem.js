@@ -1,6 +1,7 @@
 import React from "react";
 import { useInView } from "react-intersection-observer";
 import "../styles/projects.css";
+import Tilt from "react-parallax-tilt";
 
 const ProjectItem = ({ project }) => {
   const [ref, inView] = useInView({
@@ -9,19 +10,34 @@ const ProjectItem = ({ project }) => {
   });
 
   return (
-    <div ref={ref} className={`project-item ${inView ? "visible" : ""}`}>
-      <img src={project.image} alt={project.title} className="project-image" />
-      <h3 className="project-title">{project.title}</h3>
-      <p className="project-description">{project.description}</p>
-      <a
-        href={project.link}
-        className="project-link"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        View Project
-      </a>
-    </div>
+    <Tilt
+      className={`background-stripes parallax-effect ${
+        inView ? "visible" : ""
+      }`}
+      perspective={500}
+      tiltReverse={true}
+    >
+      <div className="inner-element">
+        <img
+          src={project.image}
+          alt={project.title}
+          className="project-image"
+        />
+        <a href={project.link} className="project-title">
+          {project.title}
+        </a>
+        <p className="project-description">{project.description}</p>
+        <a
+          href={project.link}
+          className="project-link"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          View Project
+        </a>
+      </div>
+      {/* </div> */}
+    </Tilt>
   );
 };
 
