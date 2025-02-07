@@ -9,21 +9,21 @@ const projects = [
     title: "Special Education AI Assistant",
     description:
       "An AI-powered assistant that centralizes SPED resources and help parents interpret their child's IEPs.",
-    image: "/images/sped.png",
+    image: "images/sped.png",
     link: "https://github.com/akshay722/SPED-AI-Assistant",
   },
   {
     title: "Tech Insights",
     description:
       "A multi agent llm app that finds YouTube interviews and blog posts for chosen technologies and business areas.",
-    image: "/images/techInsights.png",
+    image: "images/techInsights.png",
     link: "https://github.com/akshay722/TechInsights",
   },
   {
     title: "DFS BFS Visualizer",
     description:
       "An interactive visualizer for Breadth-First Search and Depth-First Search algorithms using Python.",
-    image: "/images/dfs-bfs.png",
+    image: "images/dfs-bfs.png",
     link: "https://github.com/akshay722/DFS-BFS-Visualizer",
   },
   {
