@@ -1,6 +1,5 @@
 import React from "react";
 import "../styles/projects.css";
-import Tilt from "react-parallax-tilt";
 
 import ProjectItem from "./ProjectItem";
 

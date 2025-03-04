@@ -32,12 +32,12 @@ const skills = [
     category: "Backend",
     icon: faDatabase,
     skills: [
+      { name: "Java", icon: faJava },
+      { name: "Spring Boot", icon: faJava },
       { name: "Node.js", icon: faNodeJs },
-      { name: "Express.js", icon: faNodeJs },
       { name: "MongoDB", icon: faDatabase },
       { name: "SQL", icon: faDatabase },
       { name: "Python", icon: faPython },
-      { name: "Java", icon: faJava },
     ],
   },
   {

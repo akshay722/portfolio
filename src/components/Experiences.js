@@ -28,7 +28,7 @@ const experiences = [
     title: "Software Engineer",
     company: "FourKites",
     description:
-      "As part of the Core Tracking Redesign and Dynamic Yard teams, I contributed daily to modernizing legacy applications using React and TypeScript. Focused on solving complex problems to improve performance while prioritizing customer needs, enhancing user experience, and delivering seamless, efficient solutions",
+      "As part of the Core Tracking Redesign and Dynamic Yard teams, I contributed daily to modernizing legacy applications. Focused on solving complex problems to improve performance while prioritizing customer needs, enhancing user experience, and delivering seamless, efficient solutions",
     date: "November 2021 - August 2023",
     icon: faLaptopCode,
     background: "rgb(55, 133, 196)",
