@@ -6,6 +6,7 @@ import {
   faDocker,
   faPython,
   faJava,
+  faAngular,
 } from "@fortawesome/free-brands-svg-icons";
 import {
   faDatabase,
@@ -20,21 +21,22 @@ const skills = [
     category: "Frontend",
     icon: faCode,
     skills: [
+      { name: "Angular", icon: faAngular },
       { name: "React.js", icon: faReact },
       { name: "Next.js", icon: faReact },
-      { name: "HTML", icon: faCode },
-      { name: "CSS", icon: faCode },
       { name: "JavaScript", icon: faCode },
       { name: "TypeScript", icon: faCode },
+      { name: "HTML", icon: faCode },
+      { name: "CSS", icon: faCode },
     ],
   },
   {
     category: "Backend",
     icon: faDatabase,
     skills: [
+      { name: "Node.js", icon: faNodeJs },
       { name: "Java", icon: faJava },
       { name: "Spring Boot", icon: faJava },
-      { name: "Node.js", icon: faNodeJs },
       { name: "MongoDB", icon: faDatabase },
       { name: "SQL", icon: faDatabase },
       { name: "Python", icon: faPython },

@@ -15,10 +15,10 @@ import "../styles/experiences.css";
 
 const experiences = [
   {
-    title: "Software Engineer Intern",
-    company: "Insight Global",
+    title: "Full Stack Engineer",
+    company: "Aigiliti",
     description:
-      "Contributed to the development of an enterprise-level cloud deployment automation platform, designing a user-centric frontend that simplified the configuration and deployment of AWS infrastructure. Focused on delivering an intuitive interface while integrating backend automation for seamless deployments",
+      "Contributed to the development of an enterprise-level applications, designing a user-centric frontend that simplified the configuration and deployment of AWS infrastructure. Focused on delivering an intuitive interface while integrating backend systems for seamless experience",
     date: "August 2024 - December 2024",
     icon: faBriefcase,
     background: "rgb(55, 133, 196)",
@@ -39,7 +39,7 @@ const experiences = [
     company: "iSpace",
     description:
       "In this role, I worked closely with senior developers to create robust services and implemented key features and web pages that enhanced user interaction.",
-    date: "January 2021 - November 2021",
+    date: "August 2019 - November 2021",
     icon: faGraduationCap,
     background: "rgb(55, 133, 196)",
     color: "#fff",

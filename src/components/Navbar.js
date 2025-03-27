@@ -71,9 +71,9 @@ const Navbar = forwardRef(
           >
             Contact
           </li>
-          <li className="navbar-resume" onClick={handleResumeClick}>
+          {/* <li className="navbar-resume" onClick={handleResumeClick}>
             Resume
-          </li>
+          </li> */}
         </ul>
       </nav>
     );
