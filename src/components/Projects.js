@@ -5,6 +5,12 @@ import ProjectItem from "./ProjectItem";
 
 const projects = [
   {
+    title: "Enterprise Cloud Deployment Framework",
+    description: "A Cloud deployment automation tool",
+    image: "images/ecdp.png",
+    link: "https://github.com/akshay722/Enterprise-Cloud-Deployment-Framework",
+  },
+  {
     title: "Special Education AI Assistant",
     description:
       "An AI-powered assistant that centralizes SPED resources and help parents interpret their child's IEPs.",

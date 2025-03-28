@@ -21,13 +21,14 @@ const skills = [
     category: "Frontend",
     icon: faCode,
     skills: [
-      { name: "Angular", icon: faAngular },
       { name: "React.js", icon: faReact },
       { name: "Next.js", icon: faReact },
+      { name: "Angular", icon: faAngular },
       { name: "JavaScript", icon: faCode },
       { name: "TypeScript", icon: faCode },
       { name: "HTML", icon: faCode },
       { name: "CSS", icon: faCode },
+      { name: "TailwindCSS", icon: faCode },
     ],
   },
   {
@@ -37,6 +38,8 @@ const skills = [
       { name: "Node.js", icon: faNodeJs },
       { name: "Java", icon: faJava },
       { name: "Spring Boot", icon: faJava },
+      { name: "Django", icon: faPython },
+      { name: "FastAPI", icon: faPython },
       { name: "MongoDB", icon: faDatabase },
       { name: "SQL", icon: faDatabase },
       { name: "Python", icon: faPython },
@@ -62,6 +65,7 @@ const skills = [
       { name: "AWS", icon: faAws },
       { name: "CI/CD", icon: faCogs },
       { name: "Jenkins", icon: faCogs },
+      { name: "Terraforms", icon: faCogs },
     ],
   },
   {
