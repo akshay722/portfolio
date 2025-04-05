@@ -8,5 +8,5 @@ export const bio = {
     "UTD Masters Graduate",
   ],
   description:
-    "Software Engineer with experience building scalable, high-impact solutions with a customer-first mindset. Passionate about leveraging cutting-edge technologies to enhance user experiences, optimize performance, and drive business growth. Skilled in solving complex engineering challenges while prioritizing customer needs and delivering seamless, innovative solutions. Actively seeking opportunities to collaborate with top engineering teams to build the future of technology.",
+    "I'm a software engineer who believes building great solutions is equal parts creativity, perseverance, and an analytical mind. I’ve tackled a range of engineering challenges with a focus on making a real impact for users. Now, I’m eager to join a forward-thinking team to help shape the future of technology—and maybe crack a few jokes along the way.",
 };

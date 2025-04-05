@@ -16,9 +16,9 @@ import "../styles/experiences.css";
 const experiences = [
   {
     title: "Full Stack Engineer",
-    company: "Aigiliti",
+    company: "Aigiliti (Anchorage Digital)",
     description:
-      "Contributed to the development of an enterprise-level applications, designing a user-centric frontend that simplified the configuration and deployment of AWS infrastructure. Focused on delivering an intuitive interface while integrating backend systems for seamless experience",
+      "Spearheaded the development of a scalable trading platform. Focused on delivering an intuitive interface while integrating backend systems for seamless experience",
     date: "August 2024 - December 2024",
     icon: faBriefcase,
     background: "rgb(55, 133, 196)",
@@ -36,10 +36,10 @@ const experiences = [
   },
   {
     title: "Software Engineer",
-    company: "iSpace",
+    company: "iSpace (Relative Finance)",
     description:
-      "In this role, I worked closely with senior developers to create robust services and implemented key features and web pages that enhanced user interaction.",
-    date: "January 2020 - November 2021",
+      "Built secure, scalable fintech solutions, including real-time asset tracking, user dashboards, and authentication systems",
+    date: "August 2020 - November 2021",
     icon: faGraduationCap,
     background: "rgb(55, 133, 196)",
     color: "#fff",
