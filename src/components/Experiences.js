@@ -15,11 +15,11 @@ import "../styles/experiences.css";
 
 const experiences = [
   {
-    title: "Full Stack Engineer",
-    company: "Aigiliti (Anchorage Digital)",
+    title: "Software Engineer",
+    company: "Indus River Technologies",
     description:
-      "Spearheaded the development of a scalable trading platform. Focused on delivering an intuitive interface while integrating backend systems for seamless experience",
-    date: "August 2024 - December 2024",
+      "Spearheaded the development of an AI tool. Focused on delivering an intuitive interface while integrating backend systems for seamless experience",
+    date: "February 2024 - Present",
     icon: faBriefcase,
     background: "rgb(55, 133, 196)",
     color: "#fff",
@@ -29,7 +29,7 @@ const experiences = [
     company: "FourKites",
     description:
       "As part of the Core Tracking Redesign and Dynamic Yard teams, I contributed daily to modernizing legacy applications. Focused on solving complex problems to improve performance while prioritizing customer needs, enhancing user experience, and delivering seamless, efficient solutions",
-    date: "November 2021 - August 2023",
+    date: "November 2022 - August 2023",
     icon: faLaptopCode,
     background: "rgb(55, 133, 196)",
     color: "#fff",
@@ -39,7 +39,7 @@ const experiences = [
     company: "iSpace (Relative Finance)",
     description:
       "Built secure, scalable fintech solutions, including real-time asset tracking, user dashboards, and authentication systems",
-    date: "August 2020 - November 2021",
+    date: "August 2020 - October 2022",
     icon: faGraduationCap,
     background: "rgb(55, 133, 196)",
     color: "#fff",

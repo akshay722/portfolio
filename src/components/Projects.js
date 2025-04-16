@@ -5,6 +5,12 @@ import ProjectItem from "./ProjectItem";
 
 const projects = [
   {
+    title: "Wattwize",
+    description: "A CO2 emissions tracking and reduction platform",
+    image: "images/wattwize.png",
+    link: "https://github.com/akshay722/Renewable-Energy-Insights-Hub",
+  },
+  {
     title: "Enterprise Cloud Deployment Framework",
     description: "A Cloud deployment automation tool",
     image: "images/ecdp.png",
